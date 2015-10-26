@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Router, {Route} from 'react-router';
-// import {Provider} from 'react-redux';
 import App from './components/App';
 import Main from './components/Main'
 import Search from './components/Search'
@@ -14,8 +13,6 @@ const routes = (
 );
 
 ReactDOM.render(
-  // <Provider store={store}>
-    <Router>{routes}</Router>,
-  // </Provider>,
+  <Router>{routes}</Router>,
   document.getElementById('app')
 );

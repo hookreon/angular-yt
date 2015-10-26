@@ -4,13 +4,13 @@ import Player from './Player'
 
 import '../styles/Main';
 
-export default React.createClass({
-  render: function() {
+export default class Main extends React.Component {
+  render() {
     return (
       <div className="mainContainer">
-        <Search />
-        <Player />
+        <Search {...this.props} />
+        <Player {...this.props}/>
       </div>
     )
   }
-});
+}

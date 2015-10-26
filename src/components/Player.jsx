@@ -1,14 +1,24 @@
 import React from 'react';
+import YouTube from 'react-youtube';
 
 import '../styles/Player';
 
-export default React.createClass({
-  render: function() {
+export default class Player extends React.Component {
+
+  render() {
+    const opts = {
+      height: '390',
+      width: '640',
+      playerVars: {
+        autoplay: 0
+      }
+    };
     return (
-      <div className="playerContainer">
-        <h1>Player</h1>
-        <div className="videoContainer"></div>
-      </div>
+      <YouTube className="videoContainer"
+        url={this.props.url}
+        opts={opts}
+        onPlay={this._onPlay}
+      />
     );
   }
-});
+}
