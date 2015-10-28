@@ -1,21 +1,24 @@
 @import "./config";
 
-form {
+.searchForm {
   padding: 20px 0 20px 20px;
   margin: 0 auto;
 }
-label {
+.searchLabel {
   display:block;
   margin: 0;
   font-weight: normal;
 }
-input {
+.searchInput {
   width: 100%;
 }
-input:focus {
-  outline: $brand-secondary;
+.searchInput {
+  &:focus {
+    outline: $brand-secondary;
+  }
 }
-button {
+
+.searchButton {
   width: 100%;
   margin-top: 5px;
   background: $brand-primary;
@@ -23,28 +26,28 @@ button {
   border: none;
   color: $brand-highlight;
 }
-ul {
+.searchList {
   list-style: none;
   padding-left: 20px;
   margin-top:10px;
-}
-li {
-  padding: 10px;
-  border: 1px solid $brand-tertiary;
-  width: 100%;
-  color: #6c7880;
-}
-li:hover {
-  background: $brand-primary;
-  color: $brand-highlight;
-  cursor: pointer;
+  li {
+    padding: 10px;
+    border: 1px solid $brand-tertiary;
+    width: 100%;
+    color: #6c7880;
+    &:hover {
+      background: $brand-primary;
+      color: $brand-highlight;
+      cursor: pointer;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
-  form {
+  .searchForm {
     padding: 20px 0;
   }
-  ul {
+  .searchList {
     padding-left: 0;
     max-height: 200px;
     overflow: scroll;

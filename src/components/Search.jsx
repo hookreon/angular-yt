@@ -34,12 +34,12 @@ export default class Search extends React.Component {
 
     return (
       <div className="formContainer col-sm-12 col-md-4">
-        <form onSubmit={this.youTubeSearch}>
-          <label for="seach">Search YouTube:</label><input type="text" ref="search" />
-          <button type="submit">Go!</button>
+        <form className="searchForm" onSubmit={this.youTubeSearch}>
+          <label for="search" className="searchLabel">Search YouTube:</label><input type="text" ref="search" id="search" className="searchInput"/>
+          <button type="submit" className="searchButton">Go!</button>
         </form>
         <div className="resultsContainer">
-          <ul>
+          <ul className="searchList">
             {this.props.search ?
             itemNodes :
             null}
