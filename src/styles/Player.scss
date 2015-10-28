@@ -1,3 +1,21 @@
+@import "./config";
+
 .videoContainer {
   padding: 20px;
+}
+.video {
+  display: block;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: $brand-tertiary;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .videoContainer {
+    padding: 0;
+  }
+  .video {
+    width: 100%;
+  }
 }

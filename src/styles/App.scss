@@ -1,3 +1,9 @@
+@import "./config";
+
 body {
-  font-family: 'Helvetica Neue', arial, sans-serif;
+  color: $brand-secondary;
+}
+header {
+  height: 40px;
+  background: $brand-primary;
 }

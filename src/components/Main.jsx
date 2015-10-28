@@ -2,12 +2,15 @@ import React from 'react';
 import Search from './Search'
 import Player from './Player'
 
-import '../styles/Main';
-
 export default class Main extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  // Pass props to child components
   render() {
     return (
-      <div className="mainContainer">
+      <div>
         <Search {...this.props} />
         <Player {...this.props}/>
       </div>

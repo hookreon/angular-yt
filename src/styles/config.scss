@@ -1,0 +1,19 @@
+//colors
+$hart-blue: #3bbdca;
+$blue-gray: #6c7880;
+$background-gray: #f3f3f3;
+$white: #ffffff;
+
+$brand-primary: $hart-blue;
+$brand-secondary: $blue-gray;
+$brand-tertiary: $background-gray;
+$brand-highlight: $white;
+
+
+// box-sizing
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

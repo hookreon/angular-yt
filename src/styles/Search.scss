@@ -1,7 +1,52 @@
+@import "./config";
+
 form {
-  padding: 20px;
+  padding: 20px 0 20px 20px;
   margin: 0 auto;
 }
 label {
-  padding-right: 10px;
+  display:block;
+  margin: 0;
+  font-weight: normal;
+}
+input {
+  width: 100%;
+}
+input:focus {
+  outline: $brand-secondary;
+}
+button {
+  width: 100%;
+  margin-top: 5px;
+  background: $brand-primary;
+  border-radius: 2px;
+  border: none;
+  color: $brand-highlight;
+}
+ul {
+  list-style: none;
+  padding-left: 20px;
+  margin-top:10px;
+}
+li {
+  padding: 10px;
+  border: 1px solid $brand-tertiary;
+  width: 100%;
+  color: #6c7880;
+}
+li:hover {
+  background: $brand-primary;
+  color: $brand-highlight;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  form {
+    padding: 20px 0;
+  }
+  ul {
+    padding-left: 0;
+    max-height: 200px;
+    overflow: scroll;
+  }
 }
