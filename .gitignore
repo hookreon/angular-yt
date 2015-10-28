@@ -6,8 +6,6 @@
 *.exe
 *.o
 *.so
-bundle.js
-main.css
 
 # Packages #
 ############
@@ -40,7 +38,6 @@ Thumbs.db
 
 # Build #
 ###############
-dist/
 node_modules/
 bower_components/
 .sass-cache/
