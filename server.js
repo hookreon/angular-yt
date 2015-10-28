@@ -17,13 +17,11 @@ io.on( 'connection', function( socket ) {
       maxResults: 10,
       key: 'AIzaSyBl7kRhB0f_ysnLAHQEnEPlIiOcfkvf-0A' // Key is provided for demonstration, typically would move to .env file
     };
-    console.log('inside server', searchTerm)
 
     ytSearch(searchTerm, opts, function(err, results) {
       if(err) return console.log(err);
       else {
         socket.emit( 'search results', results );
-        console.log( 'search results', results );
       }
     });
   });
